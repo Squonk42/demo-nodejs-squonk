@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	.jumbotron
+		h1 Demo Node.js
+		p.lead Built with Node.js, Express, Jade, JQuery, CoffeeScript & Twitter Bootstrap!
+		a.btn.btn-success#btn
+			span.glyphicon.glyphicon-pushpin
+			| &nbsp; Toggle subtitle
+		script
+			:coffee
+				$('#btn').click ->
+					$('.lead').toggle()

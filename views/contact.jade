@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	.jumbottron
+		h1= title
+		p Please enter your email and name in the form below:
+		form(action='/thanks', method='post')
+			table
+				tr
+					td
+						input#email(name='email', type='text', value='', placeholder='Your email')
+				tr
+					td
+						input#name(name='name', type='text', value='', placeholder='Your name')
+				tr
+					td
+						input#message(name='message', type='textarea', value='', placeholder='Your message')
+				tr
+					td
+						input(type='submit', value='Send')
+
